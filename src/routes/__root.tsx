@@ -77,11 +77,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "سبدبان | مقایسه قیمت سبد خرید سوپرمارکتی" },
+      {
+        name: "description",
+        content:
+          "سبد خریدت را یک‌بار بساز و قیمت کل آن را در اسنپ‌اکسپرس، دیجی‌کالا جت و اُکالا مقایسه کن.",
+      },
+      { property: "og:title", content: "سبدبان | مقایسه قیمت سبد خرید" },
+      {
+        property: "og:description",
+        content: "ارزان‌ترین فروشگاه برای سبد خرید روزانه‌ات را در چند ثانیه پیدا کن.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
@@ -90,6 +96,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      { rel: "preconnect", href: "https://cdn.jsdelivr.net" },
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css",
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
@@ -102,7 +113,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="fa" dir="rtl">
       <head>
         <HeadContent />
       </head>
