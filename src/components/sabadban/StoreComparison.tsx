@@ -128,10 +128,10 @@ export function StoreComparison({ quotes, bestId, saving, loading, empty, onChec
             <Button
               onClick={() => onCheckout(q)}
               variant={isBest ? "default" : "secondary"}
-              className="mt-5 h-11 w-full rounded-xl text-sm"
+              className="mt-auto h-auto w-full whitespace-normal rounded-xl px-4 py-3 pt-3 text-sm leading-6"
             >
-              انتقال سبد خرید و پرداخت در {store.name}
-              <ArrowLeft className="size-4" />
+              <span>انتقال سبد خرید و پرداخت در {store.name}</span>
+              <ArrowLeft className="size-4 shrink-0" />
             </Button>
           </div>
         );
