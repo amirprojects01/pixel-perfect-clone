@@ -6,7 +6,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 type Props = {
   quotes: StoreQuote[];
-  bestId?: string;
+  bestId: string | undefined;
   saving: number;
   loading: boolean;
   empty: boolean;
